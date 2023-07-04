@@ -22,6 +22,17 @@ const DivCabecalho = styled.div `
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width:550px){
+
+        padding: 10px; 
+    }
+
+    @media (max-width:450px){
+
+        display: flex;
+        flex-direction:column;
+    }
+
    
 
 `
@@ -29,6 +40,10 @@ const DivCabecalho = styled.div `
 const Titulo = styled.h1 `
     font-weight: 200;
     font-size: 2.3rem;
+
+    @media (max-width:550px){
+        font-size: 2rem;
+    }
 
 `
 
@@ -49,7 +64,7 @@ const Informacoes =
 [
    
     {
-        descricao : 'Portifolio',
+        descricao : 'Portifólio',
         url: 'https://www.google.com.br/'
     }
    

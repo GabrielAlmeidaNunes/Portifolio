@@ -21,6 +21,10 @@ const NavegacaoLink = styled.li `
             transition: 1s;
         }
     }
+
+    @media (max-width:550px){
+        font-size: 1.6rem;
+    }
  
 `
 const Link = styled.a `

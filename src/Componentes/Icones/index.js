@@ -27,6 +27,10 @@ const Icone = styled.a `
 
     font-size: 1.7em;
     color: #fff;
+
+    @media (max-width:550px){
+        font-size: 1.5em;
+    }
     
 `
 

@@ -2,9 +2,10 @@ import Header from './Componentes/Header';
 import styled from 'styled-components';
 import Main from './Componentes/Main';
 import Footer from './Componentes/Footer';
+import Projetos from './Componentes/Projetos';
 
 const ComponenteApp = styled.div `
-  width:100%;
+
   height:100vh;
   display:flex;
   flex-direction: column;
@@ -17,6 +18,7 @@ function App() {
 
       <Header/>
       <Main/>
+      <Projetos/>
       <Footer/>
 
     </ComponenteApp>

@@ -76,6 +76,10 @@ const SobreMimApresentacaoTitulo = styled.h1 `
 const SobreMinTecnologias = styled.div `
     display:flex;
     flex-direction:column; 
+
+    @media (max-width:690px){
+
+    }
    
 `
 
@@ -97,10 +101,18 @@ const Tecnologia = styled.section `
         box-shadow: 2px 2px 30px #5e5c5d;
         transition: 0.9s;
     }
+
+    @media (max-width:690px){
+        width:100%;
+        height: 100%;
+        padding:5px;
+    }
 `
 
 const ImagemTecologia = styled.img `
 
+    width:100%;
+    border-radius: 2px;
 `
 
 const Tecnologias = styled.div `
@@ -121,10 +133,23 @@ const Imagem = styled.figure `
 `
 
 const ImagemPerfil = styled.img `
-
+    
     width:400px;
     heigth:400px;
-    border-radius:200px
+    border-radius:200px;
+    margin-top:32px;
+
+    @media (max-width:900px){
+        width:300px;
+        heigth:300px;
+        border-radius:150px;
+          
+    }
+
+    @media (max-width:520px){
+        width:100%;
+          
+    }
 `
 
 const TecnologiaImagens = [
@@ -151,9 +176,9 @@ function Main (){
                         <SobreMimApresentacaoTitulo>🙋‍♂️Sobre Min</SobreMimApresentacaoTitulo>
 
                         <p>
-                            Olá, me chamo Gabriel de Almeida Nunes, tenho 26 anos e sou de Minas Gerais, Brasil. 
-                            Estudante do curso de Análise e Desenvolvimento de Sistemas(SENAC). 
-                            Apaixonado pro desenvolvimento de software, estudo programação a 1 ano. 
+                            Estudante do curso Análise e Desenvolvimento de Sistemas pelo (Senac). 
+                            Futuro desenvolvedor de software, adquiri amplo conhecimento teórico nos cursos que realizei voltado para desenvolvimento web, estudando a linguagem JavaScript, 
+                            busco aprofundar meus conhecimentos em React e NodeJs.
                         </p>
 
                     </SobreMinApresentacao>
@@ -189,6 +214,9 @@ function Main (){
                 <ImagemPerfil src={Perfil}></ImagemPerfil>
 
             </Imagem>
+
+
+            
 
            
 
