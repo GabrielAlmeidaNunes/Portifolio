@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Ancora from "../Ancora"
 
 const CardLista = styled.li `
     border:1px solid transparent;
@@ -23,35 +24,53 @@ const CardLista = styled.li `
 const CardTitulo = styled.h1 `
 
  text-align: center;
+
 `
+
+const CardParagrafo = styled.p `
+`
+
 const Imagem = styled.img `
     width:100%;
     height:100%;
     border-radius:10px;
 `
-const CardAncora = styled.div `
+
+const CardAncora = styled.nav `
     margin-top:24px;
     display:flex;
     justify-content: space-between
 `
-
-
-
 function Card(props){
 
     return (
 
             <CardLista>
                 <CardTitulo>{props.titulo}</CardTitulo>
-                <p>{props.descricao}</p>
-                <Imagem src={props.imagem}></Imagem>
+
+                <CardParagrafo>{props.descricao}</CardParagrafo>
+
+                <Imagem src={props.imagem}/>
+
                 <CardAncora>
-                    <a target= "blank" href={props.url}>{props.visualizar} </a>
-                    <a target= "blank" href={props.link}>{props.github}</a>
+
+                    <Ancora
+
+                        url={props.url}   
+                        link={props.visualizar} 
+                    >
+                    </Ancora>
+
+                    <Ancora
+
+                        url={props.link}   
+                        link={props.github} 
+                    >
+                    </Ancora>
+                    
                 </CardAncora>
                 
-            </CardLista>
-      
+            </CardLista>   
     )
 }
 

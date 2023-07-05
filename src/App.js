@@ -2,7 +2,7 @@ import Header from './Componentes/Header';
 import styled from 'styled-components';
 import Main from './Componentes/Main';
 import Footer from './Componentes/Footer';
-import Projetos from './Componentes/Projetos';
+
 
 const ComponenteApp = styled.div `
 
@@ -17,8 +17,7 @@ function App() {
     <ComponenteApp>
 
       <Header/>
-      <Main/>
-      <Projetos/>
+      <Main/>     
       <Footer/>
 
     </ComponenteApp>

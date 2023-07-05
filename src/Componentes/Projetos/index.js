@@ -7,6 +7,7 @@ import Calculadora from '../../Imagens/calculadora.png'
 import Relogio from '../../Imagens/relogio.png'
 import Card from '../Card'
 import styled from 'styled-components'
+import Ancora from '../Ancora'
 
 
 const ProjetosContainer = styled.section `
@@ -26,6 +27,8 @@ const ProjetosFeitos = styled.div `
 `
 
 const CardContainer = styled.ul `
+ 
+    box-sizing: border-box;
     padding:0 ;
     display:grid;
     grid-template-columns: 25% 25% 25%;
@@ -131,13 +134,17 @@ function Projetos(){
     return (
 
         <ProjetosContainer>
+
             <TituloProjeto>Portifólio</TituloProjeto>
+
             <ProjetosFeitos>
 
                 <CardContainer>
 
                     {projetos.map(projeto=>(
+
                         <Card 
+                        
                             titulo =  {projeto.titulo}
                             descricao ={projeto.descricao}
                             imagem = {projeto.imagem}
@@ -145,18 +152,19 @@ function Projetos(){
                             visualizar = {projeto.visualizar}
                             link = {projeto.link}
                             github = {projeto.github}
+                            
                         >   
-                        
                         </Card>
-                        
+                          
                     ))}
+                    
 
                 </CardContainer>
+
             </ProjetosFeitos>
 
         </ProjetosContainer>
         
-
     )
 }
 

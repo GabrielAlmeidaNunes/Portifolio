@@ -6,8 +6,13 @@ import Js from '../../Imagens/js.png'
 import React from '../../Imagens/react.png'
 import Perfil from '../../Imagens/perfil.jpg'
 import Mysql from '../../Imagens/msql.png'
+import Projetos from '../Projetos'
 
 const Principal = styled.main `
+
+`
+
+const Secao = styled.section `
   display:flex;
   padding:5%;  
   align-items: center;
@@ -21,7 +26,7 @@ const Principal = styled.main `
  
 `
 
-const SobreMin = styled.section `
+const SobreMin = styled.div `
   displa:flex;
   flex-direction:column;
  
@@ -106,6 +111,13 @@ const Tecnologia = styled.section `
         width:100%;
         height: 100%;
         padding:5px;
+
+        &:hover{
+            cursor:pointer;
+            width:90%;
+            height: 90%;
+          
+        }
     }
 `
 
@@ -164,64 +176,63 @@ const TecnologiaImagens = [
 function Main (){
 
     return(
-
         <Principal>
 
-            <SobreMin>
+            <Secao>
 
-                <SobreMinTexto>
+                <SobreMin>
 
-                    <SobreMinApresentacao>
+                    <SobreMinTexto>
 
-                        <SobreMimApresentacaoTitulo>🙋‍♂️Sobre Min</SobreMimApresentacaoTitulo>
+                        <SobreMinApresentacao>
 
-                        <p>
-                            Estudante do curso Análise e Desenvolvimento de Sistemas pelo (Senac). 
-                            Futuro desenvolvedor de software, adquiri amplo conhecimento teórico nos cursos que realizei voltado para desenvolvimento web, estudando a linguagem JavaScript, 
-                            busco aprofundar meus conhecimentos em React e NodeJs.
-                        </p>
+                            <SobreMimApresentacaoTitulo>🙋‍♂️Sobre Mim</SobreMimApresentacaoTitulo>
 
-                    </SobreMinApresentacao>
+                            <p>
+                                Estudante do curso Análise e Desenvolvimento de Sistemas pelo (Senac). 
+                                Futuro desenvolvedor de software, adquiri amplo conhecimento teórico nos cursos que realizei voltado para desenvolvimento web, estudando a linguagem JavaScript, 
+                                busco aprofundar meus conhecimentos em React e NodeJs.
+                            </p>
 
-                    <SobreMinTecnologias>
+                        </SobreMinApresentacao>
 
-                        <SobreMimApresentacaoTitulo>👨‍💻Tecnológias</SobreMimApresentacaoTitulo>
+                        <SobreMinTecnologias>
 
-                        <Tecnologias>
+                            <SobreMimApresentacaoTitulo>👨‍💻Tecnológias</SobreMimApresentacaoTitulo>
 
-                        {TecnologiaImagens.map(imagem=>(
+                            <Tecnologias>
 
-                            <Tecnologia>
+                            {TecnologiaImagens.map(imagem=>(
 
-                                <ImagemTecologia src={imagem}></ImagemTecologia>
+                                <Tecnologia>
 
-                            </Tecnologia>
+                                    <ImagemTecologia src={imagem}></ImagemTecologia>
 
-                        ))}
+                                </Tecnologia>
 
-                        </Tecnologias>
-                        
-                    </SobreMinTecnologias>
+                            ))}
 
-                </SobreMinTexto>
+                            </Tecnologias>
+                            
+                        </SobreMinTecnologias>
 
+                    </SobreMinTexto>
 
-            </SobreMin>
+                </SobreMin>
 
-    
-            <Imagem>
+                <Imagem>
 
-                <ImagemPerfil src={Perfil}></ImagemPerfil>
+                    <ImagemPerfil src={Perfil}></ImagemPerfil>
 
-            </Imagem>
+                </Imagem>
 
+            </Secao>
 
-            
-
-           
+            <Projetos/>
 
         </Principal>
     )
+    
 }
 
 export default Main

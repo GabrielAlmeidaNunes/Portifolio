@@ -7,15 +7,16 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 
 const CabecalhoContainer = styled.header `
+
     background-color: #A7BBC7;
     width:100vw;
     color:#fff;
     align-items:center
-
-    
+ 
 `
 
 const DivCabecalho = styled.div `
+
     margin:0;
     padding: 25px;
     display: flex;
@@ -34,10 +35,10 @@ const DivCabecalho = styled.div `
     }
 
    
-
 `
 
 const Titulo = styled.h1 `
+
     font-weight: 200;
     font-size: 2.3rem;
 
@@ -60,6 +61,7 @@ const DivH1 = styled.div `
             transition: 0.9s;
         }
 `
+
 const Informacoes = 
 [
    
