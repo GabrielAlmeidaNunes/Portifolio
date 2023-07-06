@@ -56,6 +56,7 @@ function Card(props){
 
                     <Links
                         color = "#000000"
+                        fonte = '1.4rem'
                         url = {props.url}   
                         descricao = {props.visualizar} 
 
@@ -64,7 +65,7 @@ function Card(props){
 
                     <Links
                         color = "#000000"
-                        fonte = '1.2rem'
+                        fonte = '1.4rem'
                         url = {props.link}   
                         descricao = {props.github} 
 
