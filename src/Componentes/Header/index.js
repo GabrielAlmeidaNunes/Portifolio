@@ -62,6 +62,11 @@ const DivH1 = styled.div `
         }
 `
 
+const DivIcones = styled.nav `
+    display:flex;
+    column-gap:2em;
+`
+
 const Informacoes = 
 [
    
@@ -107,8 +112,19 @@ function Header(){
                 </DivH1>
 
                 <Links informacoes = {Informacoes}/>
+                
+                <DivIcones>
+                {icones.map(icone=>(
 
-                <Icones icones = {icones}/>
+                    <Icones 
+
+                        link = {icone.link}
+                        icone = {icone.icone}
+
+                        />
+                     ))}
+                </DivIcones>
+             
 
             </DivCabecalho>  
               

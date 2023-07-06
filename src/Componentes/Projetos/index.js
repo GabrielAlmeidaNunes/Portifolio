@@ -7,7 +7,6 @@ import Calculadora from '../../Imagens/calculadora.png'
 import Relogio from '../../Imagens/relogio.png'
 import Card from '../Card'
 import styled from 'styled-components'
-import Ancora from '../Ancora'
 
 
 const ProjetosContainer = styled.section `
@@ -15,6 +14,7 @@ const ProjetosContainer = styled.section `
 `
 const TituloProjeto = styled.h1 `
     text-align:center;
+    font-size: 2.3rem
 `
 
 const ProjetosFeitos = styled.div `
@@ -31,6 +31,7 @@ const CardContainer = styled.ul `
     box-sizing: border-box;
     padding:0 ;
     display:grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-columns: 25% 25% 25%;
     column-gap:20px;
     row-gap:22px;
@@ -60,7 +61,7 @@ const projetos = [
     },
 
     {
-        titulo: 'CONTA',
+        titulo: 'BANCO DIGITAL',
         descricao: 'Projeto construindo com HTML, CSS e JavaScript. Utiliza o Local Storage para armazenar informações',
         imagem : Conta,
         url : 'https://conta-banco.vercel.app/',
@@ -93,7 +94,7 @@ const projetos = [
     },
 
     {
-        titulo: 'Palindromo',
+        titulo: 'PALINDROMO',
         descricao: 'Projeto construindo com React',
         imagem : Palindromo,
         url : 'https://palavra-palindroma.vercel.app/',
@@ -104,7 +105,7 @@ const projetos = [
     },
 
     {
-        titulo: 'RELOGIO',
+        titulo: 'RELÓGIO',
         descricao: 'Projeto construindo com HTML, CSS e JavaScript.',
         imagem : Relogio,
         url : 'https://relogio-beta.vercel.app/',

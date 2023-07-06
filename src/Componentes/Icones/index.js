@@ -42,11 +42,11 @@ function Icones(props) {
 
         <ListaIcones className='ListaIcones'>
 
-            {props.icones.map(icone=>(
+            
 
-                <ListaIcone><Icone className='Icone' href={icone.link} target='blank'>{icone.icone}</Icone></ListaIcone>
+                <ListaIcone><Icone className='Icone' href={props.link} target='blank'>{props.icone}</Icone></ListaIcone>
 
-            ))}
+            
             
         </ListaIcones>
       
