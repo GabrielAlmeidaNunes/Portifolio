@@ -13,7 +13,6 @@ const NavegacaoLista = styled.ul `
 `
 const NavegacaoLink = styled.li `
     list-style: none;
-    font-size: 1.8rem;
     &:hover{
         .Link{
             color: #5e5c5d;
@@ -29,7 +28,8 @@ const NavegacaoLink = styled.li `
 `
 const Link = styled.a `
     text-decoration: none;
-    color: #E1E5EA;
+    color: ${props => props.color || '#ffffff'};
+    font-size : ${props => props.fonte || '1.8rem'}
    
 `
 
@@ -41,16 +41,13 @@ function Links(props){
 
             <NavegacaoLista>
 
-                {/* {props.informacoes.map(informacao =>( */}
-
                     <NavegacaoLink>
 
-                        <Link className='Link' href={props.url}>{props.descricao}</Link>
+                        <Link target='blank' color={props.color} fonte = {props.fonte} className='Link' href={props.url}>{props.descricao}</Link>
+                       
 
                     </NavegacaoLink>
                     
-                {/* ))} */}
-
             </NavegacaoLista>
             
         </Navegacao>

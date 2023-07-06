@@ -55,17 +55,18 @@ function Card(props){
                 <CardAncora>
 
                     <Links
-
-                        url={props.url}   
-                        link={props.visualizar} 
+                        color = "#000000"
+                        url = {props.url}   
+                        descricao = {props.visualizar} 
 
                     >
                     </Links>
 
                     <Links
-
-                        url={props.link}   
-                        link={props.github} 
+                        color = "#000000"
+                        fonte = '1.2rem'
+                        url = {props.link}   
+                        descricao = {props.github} 
 
                     >
                     </Links>

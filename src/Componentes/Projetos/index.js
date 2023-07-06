@@ -152,14 +152,13 @@ function Projetos(){
                             url = {projeto.url}
                             visualizar = {projeto.visualizar}
                             link = {projeto.link}
-                            github = {projeto.github}
+                            github = {projeto.github}      
                             
                         >   
                         </Card>
                           
                     ))}
                     
-
                 </CardContainer>
 
             </ProjetosFeitos>
