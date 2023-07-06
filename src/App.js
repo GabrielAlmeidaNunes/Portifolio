@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Main from './Componentes/Main';
 import Footer from './Componentes/Footer';
 
-
 const ComponenteApp = styled.div `
 
   height:100vh;

@@ -6,7 +6,9 @@ import Js from '../../Imagens/js.png'
 import React from '../../Imagens/react.png'
 import Perfil from '../../Imagens/perfil.jpg'
 import Mysql from '../../Imagens/msql.png'
+import NodeJs from '../../Imagens/nodeJs.png'
 import Projetos from '../Projetos'
+
 
 const Principal = styled.main `
 
@@ -88,10 +90,25 @@ const SobreMinTecnologias = styled.div `
    
 `
 
+const Tecnologias = styled.div `
+   
+    display:flex;
+    column-gap:1em;
+    flex-wrap:wrap;
+    row-gap: 1em;
+   
+
+    @media (max-width: 1200px) {
+      
+        justify-content: center;
+      }
+   
+`
+
 const Tecnologia = styled.section `
     display:flex;
-    width:90px;
-    height: 90px;
+    width:85px;
+    height: 85px;
     padding:16px;
     aling-itens:center;
     justify-content: center;
@@ -101,21 +118,21 @@ const Tecnologia = styled.section `
    
     &:hover{
         cursor:pointer;
-        width:85px;
-        height: 85px;
+        width:75px;
+        height: 75px;
         box-shadow: 2px 2px 30px #5e5c5d;
         transition: 0.9s;
     }
 
     @media (max-width:690px){
-        width:100%;
-        height: 100%;
+        width:65px;
+        height: 65px;
         padding:5px;
 
         &:hover{
             cursor:pointer;
-            width:90%;
-            height: 90%;
+            width:55px;
+            height: 55px;
           
         }
     }
@@ -125,19 +142,6 @@ const ImagemTecologia = styled.img `
 
     width:100%;
     border-radius: 2px;
-`
-
-const Tecnologias = styled.div `
-   
-    display:flex;
-    column-gap:1em;
-   
-
-    @media (max-width: 1200px) {
-      
-        justify-content: center;
-      }
-   
 `
 
 const Imagem = styled.figure `
@@ -169,8 +173,10 @@ const TecnologiaImagens = [
     Html,
     Css,
     Js,
+    NodeJs,
     React,
-    Mysql
+    Mysql,
+    
 ]
 
 function Main (){
