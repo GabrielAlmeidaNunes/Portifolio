@@ -41,15 +41,15 @@ function Links(props){
 
             <NavegacaoLista>
 
-                {props.informacoes.map(informacao =>(
+                {/* {props.informacoes.map(informacao =>( */}
 
                     <NavegacaoLink>
 
-                        <Link className='Link' href={informacao.url}>{informacao.descricao}</Link>
+                        <Link className='Link' href={props.url}>{props.descricao}</Link>
 
                     </NavegacaoLink>
                     
-                ))}
+                {/* ))} */}
 
             </NavegacaoLista>
             

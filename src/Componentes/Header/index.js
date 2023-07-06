@@ -111,7 +111,17 @@ function Header(){
 
                 </DivH1>
 
-                <Links informacoes = {Informacoes}/>
+                {Informacoes.map(informacao=>(
+
+                    <Links 
+
+                        url = {informacao.url}
+                        descricao = {informacao.descricao}
+                    
+                    />
+
+                ))}
+
                 
                 <DivIcones>
                 {icones.map(icone=>(

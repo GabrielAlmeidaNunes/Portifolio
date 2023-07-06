@@ -1,5 +1,3 @@
-
-
 import styled from 'styled-components';
 
 const ListaIcones = styled.ul `
@@ -33,20 +31,14 @@ const Icone = styled.a `
     }
     
 `
-
-   
-    
+     
 function Icones(props) {
 
     return(
 
         <ListaIcones className='ListaIcones'>
 
-            
-
                 <ListaIcone><Icone className='Icone' href={props.link} target='blank'>{props.icone}</Icone></ListaIcone>
-
-            
             
         </ListaIcones>
       

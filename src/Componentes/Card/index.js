@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Ancora from "../Ancora"
+import Links from "../Links"
 
 const CardLista = styled.li `
     border:1px solid transparent;
@@ -54,19 +54,21 @@ function Card(props){
 
                 <CardAncora>
 
-                    <Ancora
+                    <Links
 
                         url={props.url}   
                         link={props.visualizar} 
-                    >
-                    </Ancora>
 
-                    <Ancora
+                    >
+                    </Links>
+
+                    <Links
 
                         url={props.link}   
                         link={props.github} 
+
                     >
-                    </Ancora>
+                    </Links>
                     
                 </CardAncora>
                 
