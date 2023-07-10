@@ -6,6 +6,7 @@ import { BsLinkedin } from 'react-icons/bs';
 import { BsWhatsapp } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import LinkRota from '../LinkRota';
 
 const CabecalhoContainer = styled.header `
 
@@ -23,6 +24,7 @@ const DivCabecalho = styled.div `
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
     @media (max-width:550px){
 
@@ -121,7 +123,7 @@ function Header(){
 
                 {Informacoes.map(informacao=>(
 
-                    <Links 
+                    <LinkRota
 
                         rota ={informacao.descricao.toLowerCase() }
                         descricao = {informacao.descricao}
