@@ -234,7 +234,7 @@ function Main (){
 
             </Secao>
 
-            <Projetos/>
+           
 
         </Principal>
     )

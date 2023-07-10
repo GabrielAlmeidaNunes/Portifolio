@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Navegacao = styled.nav `
@@ -26,7 +27,8 @@ const NavegacaoLink = styled.li `
     }
  
 `
-const Link = styled.a `
+
+const Linkk = styled.a `
     text-decoration: none;
     color: ${props => props.color || '#ffffff'};
     font-size : ${props => props.fonte || '1.8rem'}
@@ -43,8 +45,11 @@ function Links(props){
 
                     <NavegacaoLink>
 
-                        <Link target='blank' color={props.color} fonte = {props.fonte} className='Link' href={props.url}>{props.descricao}</Link>
-                       
+                        <Link  to={`/${props.rota}` }>
+
+                            <Linkk target='blank' color={props.color} fonte = {props.fonte} className='Link' >{props.descricao}</Linkk>
+
+                        </Link>
 
                     </NavegacaoLink>
                     

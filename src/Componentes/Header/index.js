@@ -5,6 +5,7 @@ import Icones from '../Icones'
 import { BsLinkedin } from 'react-icons/bs';
 import { BsWhatsapp } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const CabecalhoContainer = styled.header `
 
@@ -41,6 +42,8 @@ const Titulo = styled.h1 `
 
     font-weight: 200;
     font-size: 2.3rem;
+    color:white;
+    text-decoration: none;
 
     @media (max-width:550px){
         font-size: 2rem;
@@ -70,9 +73,10 @@ const DivIcones = styled.nav `
 const Informacoes = 
 [
    
+
     {
         descricao : 'Portifólio',
-        url: 'https://www.google.com.br/'
+        
     }
    
 ]
@@ -106,16 +110,20 @@ function Header(){
             <DivCabecalho>
 
                 <DivH1>
+                    
+                    <Link to='/'>
 
-                    <Titulo className='Titulo'>Dev Gabriel</Titulo>
+                        <Titulo className='Titulo'>Dev Gabriel</Titulo>
 
+                    </Link>
+                    
                 </DivH1>
 
                 {Informacoes.map(informacao=>(
 
                     <Links 
 
-                        url = {informacao.url}
+                        rota ={informacao.descricao.toLowerCase() }
                         descricao = {informacao.descricao}
                     
                     />

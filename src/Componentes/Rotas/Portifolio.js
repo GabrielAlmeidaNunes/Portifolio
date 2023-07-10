@@ -1,7 +1,7 @@
-import Header from './Componentes/Header';
 import styled from 'styled-components';
-import Main from './Componentes/Main';
-import Footer from './Componentes/Footer';
+
+import Projetos from '../Projetos';
+import Footer from '../Footer';
 
 const ComponenteApp = styled.div `
 
@@ -11,16 +11,16 @@ const ComponenteApp = styled.div `
   justify-content: space-between;
 
 `
-function App() {
+function Portifolio() {
   return (
-    <ComponenteApp>
+    <ComponenteApp> 
+       
+      <Projetos/>
 
-      <Header/>
-      <Main/>     
       <Footer/>
 
     </ComponenteApp>
   );
 }
 
-export default App;
+export default Portifolio;
