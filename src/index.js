@@ -17,7 +17,7 @@ root.render(
       
       <Routes>
 
-        <Route  path='/portifólio' element={<Portifolio/>}/>
+        <Route  path='/portifolio' element={<Portifolio/>}/>
         <Route  path='/' element={<Home/>}/>
 
       </Routes>

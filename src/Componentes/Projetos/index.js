@@ -11,6 +11,7 @@ import styled from 'styled-components'
 
 const ProjetosContainer = styled.section `
     width:100%;
+    
 `
 const TituloProjeto = styled.h1 `
     text-align:center;

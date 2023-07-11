@@ -1,51 +1,55 @@
 import styled from 'styled-components'
-import Links from '../Links'
 import Icones from '../Icones'
-
 import { BsLinkedin } from 'react-icons/bs';
 import { BsWhatsapp } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import LinkRota from '../LinkRota';
 
+
 const CabecalhoContainer = styled.header `
 
     background-color: #A7BBC7;
     width:100vw;
     color:#fff;
-    align-items:center
+    align-items:center;
+    
  
 `
 
 const DivCabecalho = styled.div `
 
     margin:0;
-    padding: 25px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     
+
+    @media (max-width:626px){
+
+        display: flex;
+        flex-direction:column;
+        row-gap:1em;
+    }
 
     @media (max-width:550px){
 
         padding: 10px; 
     }
 
-    @media (max-width:450px){
-
-        display: flex;
-        flex-direction:column;
-    }
+    
 
    
 `
 
 const Titulo = styled.h1 `
 
-    font-weight: 200;
+    font-weight: 100;
     font-size: 2.3rem;
     color:white;
     text-decoration: none;
+    margin:0;
 
     @media (max-width:550px){
         font-size: 2rem;
@@ -57,6 +61,7 @@ const DivH1 = styled.div `
 
     font-weight: 100;
     cursor:pointer;
+ 
   
 
     &:hover{
@@ -75,9 +80,15 @@ const DivIcones = styled.nav `
 const Informacoes = 
 [
    
+    {
+        descricao : 'Home',
+        path : ''
+        
+    },
 
     {
         descricao : 'Portifólio',
+        path : 'portifolio'
         
     }
    
@@ -125,7 +136,7 @@ function Header(){
 
                     <LinkRota
 
-                        rota ={informacao.descricao.toLowerCase() }
+                        rota ={informacao.path.toLowerCase()}
                         descricao = {informacao.descricao}
                     
                     />

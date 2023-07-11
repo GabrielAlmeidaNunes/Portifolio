@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import Css from '../../Imagens/css.png'
 import Html from '../../Imagens/html.png'
 import Js from '../../Imagens/js.png'
@@ -7,8 +6,6 @@ import React from '../../Imagens/react.png'
 import Perfil from '../../Imagens/perfil.jpg'
 import Mysql from '../../Imagens/msql.png'
 import NodeJs from '../../Imagens/nodeJs.png'
-import Projetos from '../Projetos'
-
 
 const Principal = styled.main `
 
@@ -59,6 +56,7 @@ const SobreMinApresentacao = styled.section `
         line-height: 1.6;
         margin-bottom: 8%;
         font-weight: 300;
+     
     }
 
     @media (max-width: 1200px) {
@@ -145,7 +143,13 @@ const ImagemTecologia = styled.img `
 `
 
 const Imagem = styled.figure `
-    margin:0
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    row-gap:1em;
+    text-align:center;
+
+
 `
 
 const ImagemPerfil = styled.img `
@@ -166,6 +170,13 @@ const ImagemPerfil = styled.img `
         width:100%;
           
     }
+`
+
+const ImagemDescricao = styled.figcaption `
+    
+    font-weight:100;
+    font-size:1.3rem;
+   
 `
 
 const TecnologiaImagens = [
@@ -227,8 +238,9 @@ function Main (){
                 </SobreMin>
 
                 <Imagem>
-
+                    
                     <ImagemPerfil src={Perfil}></ImagemPerfil>
+                    <ImagemDescricao>Gabriel de Almeida</ImagemDescricao>
 
                 </Imagem>
 
