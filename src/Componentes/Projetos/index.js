@@ -6,6 +6,8 @@ import Palindromo from '../../Imagens/palindromo.png'
 import Calculadora from '../../Imagens/calculadora.png'
 import Relogio from '../../Imagens/relogio.png'
 import Card from '../Card'
+import Alura from '../../Imagens/siteAlura.png'
+import AluraPlus from '../../Imagens/aluraPlay.png'
 import styled from 'styled-components'
 
 
@@ -127,6 +129,30 @@ const projetos = [
         github : 'Github'
 
     },
+
+    {
+        titulo: 'Site Barbearia',
+        descricao: 'Projeto construindo com HTML, CSS .',
+        imagem : Alura,
+        url : 'https://barbearia-alura-orpin.vercel.app/',
+        visualizar: '👁️‍🗨️',
+        link : 'https://github.com/GabrielAlmeidaNunes/barbeariaAlura',
+        github : 'Github'
+
+    },
+
+    {
+        titulo: 'Alura Plus',
+        descricao: 'Projeto construindo com HTML, CSS .',
+        imagem : AluraPlus,
+        url : 'https://calculadora-nova.vercel.app/',
+        visualizar: '👁️‍🗨️',
+        link : 'https://github.com/GabrielAlmeidaNunes/calculadoraNova',
+        github : 'Github'
+
+    },
+
+
 
     
 
